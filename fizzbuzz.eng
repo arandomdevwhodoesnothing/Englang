@@ -1,0 +1,23 @@
+# FizzBuzz in ENGLANG - classic programming test
+# Demonstrates: modulo, conditionals, loops
+
+print "FizzBuzz from 1 to 30:"
+
+for i from 1 to 30 step 1 then
+    set rem3 to i modulo 3
+    set rem5 to i modulo 5
+
+    if rem3 is zero then
+        if rem5 is zero then
+            print "FizzBuzz"
+        otherwise
+            print "Fizz"
+        end if
+    otherwise
+        if rem5 is zero then
+            print "Buzz"
+        otherwise
+            print i
+        end if
+    end if
+end for

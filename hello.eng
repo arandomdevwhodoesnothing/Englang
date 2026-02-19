@@ -1,0 +1,9 @@
+# Hello World in ENGLANG
+# Comments start with #
+
+set greeting to "Hello, World!"
+print greeting
+
+set name to "ENGLANG"
+set version to 1
+print "Welcome to" and name and "version" and version

@@ -1,0 +1,42 @@
+# Bubble Sort in ENGLANG
+# Demonstrates: arrays, nested loops, conditionals
+
+create array nums
+append 64 to array nums
+append 34 to array nums
+append 25 to array nums
+append 12 to array nums
+append 22 to array nums
+append 11 to array nums
+append 90 to array nums
+
+size of array nums into n
+
+print "Before sorting:"
+for i from 0 to 6 step 1 then
+    get element i of array nums into val
+    print val
+end for
+
+# Bubble sort
+set passes to 0
+while passes is less than n then
+    set inner to 0
+    while inner is less than 6 then
+        get element inner of array nums into a
+        set next to inner plus 1
+        get element next of array nums into b
+        if a is greater than b then
+            set element inner of array nums to b
+            set element next of array nums to a
+        end if
+        increment inner
+    end while
+    increment passes
+end while
+
+print "After sorting:"
+for i from 0 to 6 step 1 then
+    get element i of array nums into val
+    print val
+end for

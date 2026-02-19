@@ -1,0 +1,23 @@
+# Prime Number Sieve in ENGLANG
+# Find all primes up to 50
+
+set limit to 50
+print "Prime numbers up to" and limit
+
+set candidate to 2
+while candidate is less than or equal to limit then
+    set is_prime to 1
+    set divisor to 2
+    set max_divisor to candidate minus 1
+    while divisor is less than max_divisor then
+        set remainder to candidate modulo divisor
+        if remainder is zero then
+            set is_prime to 0
+        end if
+        increment divisor
+    end while
+    if is_prime is equal to 1 then
+        print candidate
+    end if
+    increment candidate
+end while

@@ -1,0 +1,22 @@
+# Factorial using recursion-style iteration in ENGLANG
+# Demonstrates: functions, loops, variables
+
+define factorial with n as
+    set result to 1
+    set i to 1
+    while i is less than or equal to n then
+        multiply result by i into result
+        increment i
+    end while
+    set return to result
+end define
+
+set num to 10
+call factorial with num
+print "Factorial of" and num and "is" and return
+
+# Test several factorials
+for x from 1 to 8 step 1 then
+    call factorial with x
+    print "Factorial of" and x and "is" and return
+end for

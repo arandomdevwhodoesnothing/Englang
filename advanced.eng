@@ -1,0 +1,53 @@
+# Stack-Based Calculator in ENGLANG
+# Demonstrates: push/pop stack operations, functions
+
+print "=== Stack Calculator Demo ==="
+
+# Calculate (3 + 4) * 2
+push 3 onto stack
+push 4 onto stack
+pop from stack into b
+pop from stack into a
+add a and b into sum
+push sum onto stack
+
+push 2 onto stack
+pop from stack into multiplier
+pop from stack into value
+multiply value by multiplier into product
+print "Result of (3 + 4) * 2 =" and product
+
+# Calculate power using repeated multiplication
+print ""
+print "=== Powers of 2 ==="
+set base to 2
+set power to 1
+for exp from 1 to 10 step 1 then
+    multiply power by base into power
+    print "2 ^" and exp and "=" and power
+end for
+
+# Memory demo
+print ""
+print "=== Memory Operations ==="
+set x to 42
+store x at address 0
+set x to 100
+store x at address 1
+
+load from address 0 into y
+load from address 1 into z
+add y and z into total
+print "Loaded from memory: " and y and "+" and z and "=" and total
+
+# String operations
+print ""
+print "=== String Operations ==="
+set first to "Hello"
+set second to "World"
+set msg to first concatenated with " "
+set msg to msg concatenated with second
+print msg
+
+length of msg into len
+print "Length of message:" and len

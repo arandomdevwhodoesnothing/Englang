@@ -1,0 +1,18 @@
+# Fibonacci Sequence in ENGLANG
+
+set a to 0
+set b to 1
+set count to 15
+
+print "Fibonacci Sequence:"
+print a
+print b
+
+set i to 2
+while i is less than count then
+    add a and b into c
+    print c
+    set a to b
+    set b to c
+    increment i
+end while
