@@ -6,6 +6,12 @@ variables, conditionals, loops, functions, arrays, a stack, and raw memory.
 
 ---
 
+## Download 
+
+```
+git clone https://github.com/arandomdevwhodoesnothing/Englang.git
+```
+
 ## Build
 
 ```bash
